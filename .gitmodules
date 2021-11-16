@@ -1,0 +1,3 @@
+[submodule "artabia-contracts"]
+	path = artabia-contracts
+	url = https://github.com/omicronblockchain/artabia-contracts
