@@ -27,6 +27,7 @@ class ArtabiaERC721 {
 
   mintAndCreateOrder(id, royalties, price) {
     if(!this.isConnected()) throw new Error('Not connected to the blockchain')
+
     return this.contract.methods.mintAndCreateOrder(id, royalties, this.web3.utils.toWei(price, 'ether')).send().then(getMarketplaceOrderId)
   }
 
